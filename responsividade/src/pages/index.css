@@ -1,0 +1,137 @@
+body {
+    font-family: 'Trebuchet MS';
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0488d4;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-style: oblique;
+}
+
+nav { 
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lucida Sans';
+    font-style: italic;
+    text-shadow: rgba(0, 0, 0, 0.5);
+}
+
+p {
+    display: flex;
+}
+
+.login {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.senha {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.entrar {
+    display: flex;
+    background-color: #0488d4;
+    color: #fff;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.cadastro {
+    color: #141fb8;
+    display: flex;
+    text-decoration: underline;
+
+}
+
+footer {
+    background-color: #0488d4;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    nav ul.showing {
+        display: flex;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
